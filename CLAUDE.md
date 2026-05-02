@@ -22,16 +22,27 @@ Apply for PhD in Computing at Malaysian universities, starting with the **find-s
 6. UCSI University
 7. University of Nottingham Malaysia
 
-## Research direction (working draft)
+## Research direction
 
-Anchored on MSc work — **NLP + time-series + digital mental health**. Possible PhD framings:
+**Working title:** *World Model of Online Mental-Health Communities — A JEPA-Style Latent Dynamics Approach to Forecasting and Counterfactual Analysis of Discourse*
 
-- Multimodal early-warning systems for mental health crises using social media
-- Cross-platform / cross-language sentiment forecasting (extend Reddit → Twitter/X, Malaysian context, BM/Chinese)
-- Causal / explainable models for mental health discourse trends
-- LLM-based intervention or detection systems for online mental health communities
+**Core idea:** Treat an online mental-health community (Reddit, Twitter/X) as a dynamical system. Learn a JEPA-style **world model** — encoder for latent community state + predictor for future latent state given history (and optionally external events/triggers). Use the model for:
 
-To be refined after literature review.
+1. **Forecasting** sentiment surges and crisis signals (continues MSc work)
+2. **Counterfactual reasoning** — "what would discourse look like if event X hadn't occurred?"
+3. **Intervention simulation** — simulate effects of moderation strategies, public-health messaging, content policies
+
+**Why this framing:**
+- Genuine world model (latent dynamics + counterfactual/planning use), not just predictive learning
+- Builds directly on MSc (sentiment forecasting on Reddit) — Prof. Selina Low can vouch
+- Compute-feasible on Malaysian PhD budget (text + temporal, no video/robotics)
+- Publishable in 3–4 years (ACL, EMNLP, NeurIPS time-series + ML4H workshops, CHI)
+- Future-proof: world models, self-supervised learning, digital mental health, causal AI — all durable trends
+
+**Pitch tactic for outreach:**
+- To **applied-AI / health-AI profs** (Sunway, Taylor's, APU, UCSI, Xiamen): lead with *"latent predictive models for mental-health discourse forecasting"* — familiar ground
+- To **research-track profs** (Monash, Nottingham): lead with full *"world model + counterfactual reasoning"* framing
+- Same proposal core, two pitch levels.
 
 ## Current phase
 
