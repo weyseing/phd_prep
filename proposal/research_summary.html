@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Counterfactual AI for Malaysian Time-Series — Research Summary</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 20mm;
+  }
+  html, body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 10.5pt;
+    line-height: 1.45;
+    color: #111;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 16pt;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+    border-bottom: 2px solid #222;
+    padding-bottom: 6px;
+  }
+  .subtitle {
+    font-size: 10.5pt;
+    color: #444;
+    margin: 0 0 14px 0;
+    font-style: italic;
+  }
+  h2 {
+    font-size: 11.5pt;
+    margin: 12px 0 4px 0;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  p {
+    margin: 0 0 8px 0;
+    text-align: justify;
+  }
+  ul, ol {
+    margin: 4px 0 8px 0;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 3px;
+    text-align: justify;
+  }
+  em {
+    color: #333;
+  }
+  strong {
+    color: #000;
+  }
+  .stakeholder-list li {
+    margin-bottom: 5px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 14px 0 8px 0;
+  }
+  .footer {
+    font-size: 9pt;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Counterfactual AI for Malaysian Time-Series — Research Summary</h1>
+<p class="subtitle">Heng Wey Seing (Jeremy) — PhD enquiry, May 2026</p>
+
+<h2>The problem</h2>
+<p>Foundation-model time-series forecasters (e.g. Chronos, 2024) predict trajectories accurately but cannot reason about interventions. Counterfactual machine-learning methods (e.g. CRN, Bica et al. 2020) reason about interventions but have only been validated on small synthetic medical simulators. No method combines the two — yet <em>"what if?"</em> is exactly the question Malaysian decision-makers need:</p>
+<ul class="stakeholder-list">
+  <li><strong>Ministry of Health:</strong> <em>"If we had sprayed Klang two weeks ago, how many dengue cases would we have prevented?"</em></li>
+  <li><strong>Tenaga Nasional:</strong> <em>"Without the Hari Raya holiday, what would peak electricity demand have been?"</em></li>
+  <li><strong>MPOB:</strong> <em>"If rainfall had been 20% higher last quarter, what palm-oil yield change should we expect?"</em></li>
+</ul>
+
+<h2>Proposed contributions</h2>
+<ol>
+  <li>Extend foundation-model forecasters to accept multivariate covariates (weather, holidays, policy events).</li>
+  <li>Adapt adversarial-balancing counterfactual methods to operate on foundation-model latents.</li>
+  <li>Build the first publicly documented Malaysian benchmark for counterfactual time-series forecasting.</li>
+  <li>Develop an evaluation methodology for counterfactual claims when ground truth is unavailable (synthetic simulators + natural experiments + sensitivity bounds).</li>
+  <li>Prototype a decision-support tool for one Malaysian agency (target: MOH for dengue, or Tenaga for grid demand).</li>
+</ol>
+
+<h2>Feasibility (Malaysian PhD compute budget)</h2>
+<p><strong>Compute:</strong> laptop + Google Colab Pro + ~RM 2,000–6,000/year cloud GPU. No supercomputer required.<br>
+<strong>Data:</strong> publicly available (MOH iDengue, Met Malaysia, MPOB, Energy Commission). Granular intervention data via supervisor-mediated partnership where needed.<br>
+<strong>Pace:</strong> 4–8 year part-time, approx. 15–20 hrs/week. Each year produces a self-contained deliverable; thesis is defendable on Years 1–5 work alone if Year 6 case-study slips.</p>
+
+<h2>Publication plan</h2>
+<p>Four papers across six years — Year 2 (regional/applied venue), Year 3–4 (top-tier methods), Year 4–5 (causal-ML or benchmark), Year 6 (Malaysian case study).</p>
+
+<h2>Why this thesis survives 4–8 years of AI evolution</h2>
+<p>The proposal commits to <strong>paradigms</strong> ("foundation-model + adversarial causal balancing"), not to specific 2026 architectures. Annual literature refresh is built into Year 4. The architecture diagram is component-level; the encoder is swappable. The Malaysian dataset moat protects against scooping by Western labs.</p>
+
+<h2>Supervisor profile sought</h2>
+<p>A supervisor whose work touches one or more of: time-series machine learning, causal/counterfactual inference, applied health-AI or energy-AI. Combination preferred but co-supervision across departments is welcome.</p>
+
+<h2>Candidate background</h2>
+<p>Just completed: MSc Data Science, Sunway University, April 2026. Dissertation: time-series forecasting of mental-health sentiment surges on Reddit (supervisor: Prof. Dr Selina Low Yeh Ching). Full CV attached.</p>
+
+<hr>
+<p class="footer">Contact: hengweyseing53@gmail.com &nbsp;·&nbsp; LinkedIn: jeremy-heng-98b95a228 &nbsp;·&nbsp; GitHub: weyseing</p>
+
+</body>
+</html>
