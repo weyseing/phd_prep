@@ -19,8 +19,7 @@ Apply for PhD in Computing at Malaysian universities, starting with the **find-s
 3. Monash University Malaysia
 4. Asia Pacific University (APU)
 5. Xiamen University Malaysia
-6. UCSI University
-7. University of Nottingham Malaysia
+6. University of Nottingham Malaysia
 
 ## Research direction
 
@@ -40,7 +39,7 @@ Apply for PhD in Computing at Malaysian universities, starting with the **find-s
 - Future-proof: world models, self-supervised learning, digital mental health, causal AI — all durable trends
 
 **Pitch tactic for outreach:**
-- To **applied-AI / health-AI profs** (Sunway, Taylor's, APU, UCSI, Xiamen): lead with *"latent predictive models for mental-health discourse forecasting"* — familiar ground
+- To **applied-AI / health-AI profs** (Sunway, Taylor's, APU, Xiamen): lead with *"latent predictive models for mental-health discourse forecasting"* — familiar ground
 - To **research-track profs** (Monash, Nottingham): lead with full *"world model + counterfactual reasoning"* framing
 - Same proposal core, two pitch levels.
 
