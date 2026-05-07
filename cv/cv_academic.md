@@ -14,10 +14,11 @@ Counterfactual reasoning over foundation-model time-series · Self-supervised pr
 
 ## Education
 
-**Master of Science in Data Science** — *Sunway University, Malaysia* &nbsp;&nbsp; *(submitted Apr 2026)*
+**Master of Science in Data Science** — *Sunway University, Malaysia* &nbsp;&nbsp; *(dissertation submitted Apr 2026; final result pending release)*
 Supervisor: **Prof. Dr Selina Low Yeh Ching**
+CGPA 3.96 / 4.00 *(provisional — 11 of 12 modules graded; A+ in 11, A in 1)*
+Top-grade modules (A+) include **Forecasting Analytics, Artificial Intelligence, Statistical Methods for Data Science, Research Methodology, Data Mining, Big Data Management, and Data Science Capstone Project 1**.
 Dissertation: *Forecasting Mental Health Sentiment Surges: A Time-Series Analysis of Reddit Discourse.*
-&nbsp;&nbsp;<!-- TODO: CGPA / classification — fill or delete this line -->
 
 **Bachelor of Science in Electrical & Electronics Engineering** — *Wawasan Open University, Malaysia* &nbsp;&nbsp; *(Nov 2023)*
 &nbsp;&nbsp;CGPA 3.64 / 4.00 (First-Class Honours)
@@ -65,9 +66,9 @@ Lead the AI engineering function for one of Malaysia's largest payment infrastru
 - **Languages and runtime:** Python (primary), SQL, JavaScript/TypeScript, Bash.
 - **Machine learning / deep learning:** PyTorch, scikit-learn, HuggingFace Transformers (RoBERTa), statsmodels (Poisson / Negative Binomial GLMs), Prophet, SARIMA / SARIMAX.
 - **NLP and text mining:** HuggingFace pipelines, RoBERTa-based sentiment classification, VADER, lexicon + transformer hybrid scoring, topic modelling.
-- **Big data and data pipelines:** Apache Spark, Kafka, Airflow. <!-- TODO: confirm exact stack at Fiuu — drop any that don't apply -->
-- **Cloud and AIOps:** <!-- TODO: AWS / GCP / Azure — which one(s)? -->
-- **Agentic AI and LLM tooling:** LangChain, LlamaIndex, prompt engineering, retrieval-augmented generation. <!-- TODO: confirm stack -->
+- **Big data and streaming:** Apache Kafka, Apache Flink, AWS Redshift, lakehouse and data-warehouse architectures.
+- **Cloud and AIOps:** AWS, GCP, Azure (multi-cloud experience).
+- **Agentic AI and LLM tooling:** LangChain, LlamaIndex, LangGraph, custom agentic frameworks; memory and vector stores (mem0, Redis); prompt engineering and retrieval-augmented generation.
 - **RPA platforms:** UiPath, Blue Prism, Automation Anywhere (A360 — certified).
 - **Tools:** Git/GitHub, Docker, Linux, Jupyter, Pandas, Matplotlib.
 
@@ -76,14 +77,8 @@ Lead the AI engineering function for one of Malaysia's largest payment infrastru
 ## Certifications
 
 - **Automation Anywhere Certified Advanced RPA Professional (A360)** &nbsp;&nbsp; *(Aug 2022)*
-- **Applied Data Science** — <!-- TODO: issuer (IBM / Coursera / etc.) --> &nbsp;&nbsp; *(Apr 2022)*
+- **Certificate in Applied Data Science** — *Forward College, Malaysia* &nbsp;&nbsp; *(Apr 2022)*
 - **Certified Dell RPA Developer** &nbsp;&nbsp; *(Oct 2019)*
-
----
-
-## Awards and honours
-
-<!-- TODO: anything? Dean's list, Sunway scholarships, hackathon placings, Dell internal awards, Fiuu recognitions, presentation awards. If genuinely none, delete this section before sending. -->
 
 ---
 
@@ -100,8 +95,6 @@ Lead the AI engineering function for one of Malaysia's largest payment infrastru
 **Prof. Dr Selina Low Yeh Ching** &nbsp;&nbsp; *(MSc supervisor)*
 Associate Professor (Deputy Dean), School of Computing and Artificial Intelligence
 Sunway University, Malaysia
-Email: <!-- TODO: get her institutional email --> · LinkedIn: <!-- optional -->
+Email: yehchingl@sunway.edu.my
 
-<!-- TODO: 2nd reference — work manager (Fiuu) or BSc-era technical referee. Name, title, email. -->
-
-<!-- TODO: 3rd reference — optional but Malaysian formal-application stage usually wants 2–3. -->
+*Additional references available on request.*

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Heng Wey Seing (Jeremy) — Academic CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 18mm;
+  }
+  html, body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 10pt;
+    line-height: 1.42;
+    color: #111;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 20pt;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .contact {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 6px 0;
+    font-size: 10pt;
+    color: #222;
+  }
+  .contact li {
+    margin-bottom: 1px;
+  }
+  .contact li::before {
+    content: "·  ";
+    color: #888;
+  }
+  h2 {
+    font-size: 11.5pt;
+    margin: 14px 0 4px 0;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 1px solid #999;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  p {
+    margin: 0 0 5px 0;
+  }
+  ul, ol {
+    margin: 4px 0 6px 0;
+    padding-left: 20px;
+  }
+  ul li, ol li {
+    margin-bottom: 2px;
+  }
+  em { color: #333; }
+  strong { color: #000; }
+  a { color: #1a4f8a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .role-line {
+    margin: 6px 0 2px 0;
+  }
+  .role-meta {
+    color: #444;
+    font-size: 9.5pt;
+    margin: 0 0 4px 0;
+  }
+  .education-block {
+    margin: 0 0 8px 0;
+  }
+  .education-block p {
+    margin: 0 0 1px 0;
+  }
+  .references-block p {
+    margin: 0;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 8px 0 6px 0;
+  }
+  .small-note {
+    font-size: 9pt;
+    color: #555;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<h1>Heng Wey Seing (Jeremy)</h1>
+<ul class="contact">
+  <li>Petaling Jaya, Selangor 47301, Malaysia</li>
+  <li>+60 18-379 2007 &nbsp;·&nbsp; hengweyseing53@gmail.com</li>
+  <li><a href="https://www.linkedin.com/in/jeremy-heng-98b95a228/">linkedin.com/in/jeremy-heng-98b95a228</a> &nbsp;·&nbsp; <a href="https://github.com/weyseing">github.com/weyseing</a></li>
+</ul>
+
+<h2>Research interests</h2>
+<p>Counterfactual reasoning over foundation-model time-series · Self-supervised predictive models · Time-series forecasting with covariates · Applied AI for Malaysian public-health surveillance and infrastructure forecasting (dengue, electricity demand) · Decision-support systems for public-sector stakeholders.</p>
+
+<h2>Education</h2>
+
+<div class="education-block">
+  <p class="role-line"><strong>Master of Science in Data Science</strong> — <em>Sunway University, Malaysia</em> &nbsp;&nbsp; <span class="role-meta">(dissertation submitted Apr 2026; final result pending release)</span></p>
+  <p>Supervisor: <strong>Prof. Dr Selina Low Yeh Ching</strong></p>
+  <p>CGPA 3.96 / 4.00 <em>(provisional — 11 of 12 modules graded; A+ in 11, A in 1)</em></p>
+  <p>Top-grade modules (A+) include <strong>Forecasting Analytics, Artificial Intelligence, Statistical Methods for Data Science, Research Methodology, Data Mining, Big Data Management, and Data Science Capstone Project 1</strong>.</p>
+  <p>Dissertation: <em>Forecasting Mental Health Sentiment Surges: A Time-Series Analysis of Reddit Discourse.</em></p>
+</div>
+
+<div class="education-block">
+  <p class="role-line"><strong>Bachelor of Science in Electrical &amp; Electronics Engineering</strong> — <em>Wawasan Open University, Malaysia</em> &nbsp;&nbsp; <span class="role-meta">(Nov 2023)</span></p>
+  <p>CGPA 3.64 / 4.00 (First-Class Honours)</p>
+</div>
+
+<div class="education-block">
+  <p class="role-line"><strong>Diploma in Electrical &amp; Electronics Engineering</strong> — <em>KDU University College, Malaysia</em> &nbsp;&nbsp; <span class="role-meta">(Jan 2017)</span></p>
+  <p>CGPA 3.66 / 4.00</p>
+</div>
+
+<h2>Research experience</h2>
+
+<p class="role-line"><strong>MSc Dissertation</strong> — <em>Sunway University</em> &nbsp;&nbsp; <span class="role-meta">(2024 – Apr 2026)</span></p>
+<p><em>Forecasting Mental Health Sentiment Surges: A Time-Series Analysis of Reddit Discourse.</em></p>
+<ul>
+  <li>Built an end-to-end pipeline collecting <strong>138,058 Reddit posts</strong> (2024–2025, 705 days) from four student-mental-health subreddits (r/college, r/Students, r/GradSchool, r/mentalhealth, student-context filtered) via the <strong>Arctic Shift API</strong>; classified each post as "stressed" or not using a hybrid <strong>VADER + RoBERTa</strong> scheme with disagreement flagging for manual review.</li>
+  <li>Aggregated classified posts into a 705-day stress-count time-series; fitted <strong>Poisson and Negative Binomial GLMs</strong> with calendar covariates (day-of-week, exam period, semester break, subreddit composition) — Negative Binomial strongly preferred (ΔAIC = 550), confirming a weekend effect (Sat −18.0%, Sun −12.7% vs Monday, p&lt;0.001) and an exam-period uplift (+7.2%, p&lt;0.001).</li>
+  <li>Compared <strong>SARIMA(1,1,1)(1,1,1,7)</strong> and <strong>Prophet</strong> via 4-window walk-forward cross-validation (21-day horizon, identical academic-calendar exogenous regressors): SARIMA won overall (mean MAE 21.61 vs Prophet 35.67), while Prophet became competitive once trained on a full year of seasonal history.</li>
+  <li>Stack: Python, pandas, HuggingFace Transformers (RoBERTa), PyTorch, vaderSentiment, statsmodels, Prophet, scikit-learn. Code: <a href="https://github.com/weyseing/sentiment_forecast">github.com/weyseing/sentiment_forecast</a>.</li>
+</ul>
+
+<h2>Publications and preprints</h2>
+<p><em>None to date.</em> (PhD proposal targets first publications in time-series forecasting and applied counterfactual ML venues.)</p>
+
+<h2>Professional experience</h2>
+
+<p class="role-line"><strong>Manager, AI Engineering</strong> — <em>Fiuu (formerly Razer Merchant Services / MOLPay), Kuala Lumpur</em> &nbsp;&nbsp; <span class="role-meta">(Aug 2022 – Present)</span></p>
+<p>Lead the AI engineering function for one of Malaysia's largest payment infrastructure providers. Responsibilities relevant to research training:</p>
+<ul>
+  <li>Architected large-scale data pipelines for corporate P&amp;L, operational intelligence, and <strong>strategic forecasting</strong> — covariate-rich time-series at production scale.</li>
+  <li>Designed agentic-AI frameworks combining LLM-driven reasoning with rule-based logic for autonomous diagnosis, predictive monitoring, and intelligent automation.</li>
+  <li>Built knowledge-based AI platforms unifying enterprise data — relevant precedent for the data-integration work that any Malaysian public-sector decision-support prototype will require.</li>
+</ul>
+
+<p class="role-line"><strong>Robotics Process Automation (RPA) Engineer</strong> — <em>Dell Technologies, Kuala Lumpur</em> &nbsp;&nbsp; <span class="role-meta">(Jan 2018 – Aug 2022)</span></p>
+<ul>
+  <li>Engineered enterprise-grade RPA solutions on UiPath, Blue Prism, and Automation Anywhere.</li>
+  <li>Developed cognitive-automation bots integrating <strong>OCR and NLP</strong> for unstructured-data handling — early hands-on exposure to the same NLP techniques later applied in the MSc dissertation.</li>
+  <li>Designed scalable robotic frameworks integrating APIs, databases, and legacy systems.</li>
+  <li>Delivered orchestration, monitoring, and governance systems for production-grade bot fleets.</li>
+</ul>
+
+<h2>Technical skills</h2>
+<ul>
+  <li><strong>Languages and runtime:</strong> Python (primary), SQL, JavaScript/TypeScript, Bash.</li>
+  <li><strong>Machine learning / deep learning:</strong> PyTorch, scikit-learn, HuggingFace Transformers (RoBERTa), statsmodels (Poisson / Negative Binomial GLMs), Prophet, SARIMA / SARIMAX.</li>
+  <li><strong>NLP and text mining:</strong> HuggingFace pipelines, RoBERTa-based sentiment classification, VADER, lexicon + transformer hybrid scoring, topic modelling.</li>
+  <li><strong>Big data and streaming:</strong> Apache Kafka, Apache Flink, AWS Redshift, lakehouse and data-warehouse architectures.</li>
+  <li><strong>Cloud and AIOps:</strong> AWS, GCP, Azure (multi-cloud experience).</li>
+  <li><strong>Agentic AI and LLM tooling:</strong> LangChain, LlamaIndex, LangGraph, custom agentic frameworks; memory and vector stores (mem0, Redis); prompt engineering and retrieval-augmented generation.</li>
+  <li><strong>RPA platforms:</strong> UiPath, Blue Prism, Automation Anywhere (A360 — certified).</li>
+  <li><strong>Tools:</strong> Git/GitHub, Docker, Linux, Jupyter, Pandas, Matplotlib.</li>
+</ul>
+
+<h2>Certifications</h2>
+<ul>
+  <li><strong>Automation Anywhere Certified Advanced RPA Professional (A360)</strong> &nbsp;&nbsp; <span class="role-meta">(Aug 2022)</span></li>
+  <li><strong>Certificate in Applied Data Science</strong> — <em>Forward College, Malaysia</em> &nbsp;&nbsp; <span class="role-meta">(Apr 2022)</span></li>
+  <li><strong>Certified Dell RPA Developer</strong> &nbsp;&nbsp; <span class="role-meta">(Oct 2019)</span></li>
+</ul>
+
+<h2>Languages</h2>
+<ul>
+  <li><strong>English</strong> — Professional working (medium of instruction at MSc, BSc, Diploma)</li>
+  <li><strong>Bahasa Malaysia</strong> — Professional working</li>
+  <li><strong>Mandarin Chinese</strong> — Professional working</li>
+</ul>
+
+<h2>References</h2>
+<div class="references-block">
+  <p><strong>Prof. Dr Selina Low Yeh Ching</strong> &nbsp;&nbsp; <em>(MSc supervisor)</em></p>
+  <p>Associate Professor (Deputy Dean), School of Computing and Artificial Intelligence</p>
+  <p>Sunway University, Malaysia</p>
+  <p>Email: yehchingl@sunway.edu.my</p>
+</div>
+<p class="small-note" style="margin-top:6px;">Additional references available on request.</p>
+
+</body>
+</html>
