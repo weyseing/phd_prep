@@ -4,7 +4,7 @@
 
 - **Title:** Assistant Professor · **Head of Artificial Intelligence Programme**
 - **Affiliation:** School of Electrical Engineering and Artificial Intelligence, Xiamen University Malaysia
-- **Email:** chongchai.chua@xmu.edu.my *(verify; XMU pattern is firstname.lastname@xmu.edu.my)*
+- **Email:** chongchai.chua@xmu.edu.my
 - **Profile URL:** https://www.xmu.edu.my/index.php/staff/assistant-prof-dr-chua-chong-cai
 - **PhD:** Multimedia University, 2018
 - **Pitch track:** **Applied**

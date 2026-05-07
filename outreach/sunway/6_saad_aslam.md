@@ -5,7 +5,7 @@
 - **Title:** Associate Professor (Head — check faculty page for full title block)
 - **Affiliation:** School of Computing and Artificial Intelligence, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/associate-professor-dr-saad-aslam
-- **Email:** TODO — copy from faculty page (masked as `@email`)
+- **Email:** saada@sunway.edu.my
 - **Pitch track:** **Applied**
 - **Priority:** Tier 2
 - **Status:** drafted, not sent

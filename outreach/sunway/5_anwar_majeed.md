@@ -5,7 +5,7 @@
 - **Title:** Associate Professor (Head of Department)
 - **Affiliation:** Department of Data Science and Artificial Intelligence, School of Computing and Artificial Intelligence, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/professor-anwar-pp-abdul-majeed
-- **Email:** TODO — copy from faculty page (masked as `@email`)
+- **Email:** anwarm@sunway.edu.my
 - **Pitch track:** **Applied**
 - **Priority:** Tier 2
 - **Status:** drafted, not sent

@@ -4,7 +4,7 @@
 
 - **Title:** **Professor · Head of School** (recently promoted to full Professor — second full Prof in the school)
 - **Affiliation:** School of Computer and Mathematical Sciences, University of Nottingham Malaysia Campus
-- **Email:** zhiyuan.chen@nottingham.edu.my *(verify before sending)*
+- **Email:** Zhiyuan.Chen@nottingham.edu.my
 - **Profile URL:** https://www.nottingham.edu.my/Science/People/zhiyuan.chen
 - **Senior Fellow, Higher Education Academy UK** · **British Computer Society Professional Member**
 - **PhD:** University of Nottingham, 2011 (MPhil 2007)

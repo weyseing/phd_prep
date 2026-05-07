@@ -5,7 +5,7 @@
 - **Title:** Professor
 - **Affiliation:** School of Computing and Artificial Intelligence, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/professor-liew-chee-sun
-- **Email:** TODO — copy from faculty page (masked as `@email`)
+- **Email:** cheesunl@sunway.edu.my
 - **Pitch track:** **Applied** (with a research-track lean — distributed/scientific workflow heritage)
 - **Priority:** Tier 1
 - **Status:** drafted, not sent

@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor
 - **Affiliation:** School of Computing, Faculty of Computing and Engineering Technology, Asia Pacific University (APU)
-- **Email:** raja.rajeswari@apu.edu.my *(verify; APU pattern is firstname.lastname@apu.edu.my)*
+- **Email:** raja.rajeswari@staffemail.apu.edu.my
 - **Google Scholar:** https://scholar.google.com/citations?user=UeaincsAAAAJ
 - **Pitch track:** **Applied**
 - **Priority:** Tier 1 — **best topical match found across all 7 universities so far**

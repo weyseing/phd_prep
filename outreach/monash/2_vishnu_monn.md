@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor · **Deputy Head of Education** · Director, Advanced Computing Platform (ACP)
 - **Affiliation:** School of Information Technology, Monash University Malaysia
-- **Email:** Vishnu.Monn@monash.edu *(verify on Monash profile page before sending)*
+- **Email:** vishnu.monn@monash.edu
 - **Profile URL:** https://research.monash.edu/en/persons/vishnu-monn/
 - **ORCID:** 0000-0001-6809-5817
 - **Pitch track:** **Research** (with applied-impact framing)

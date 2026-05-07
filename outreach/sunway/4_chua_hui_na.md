@@ -5,7 +5,7 @@
 - **Title:** Professor (Programme Leader of [check faculty page for full title])
 - **Affiliation:** School of Computing and Artificial Intelligence, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/professor-chua-hui-na
-- **Email:** TODO — copy from faculty page (masked as `@email`)
+- **Email:** huinac@sunway.edu.my
 - **Pitch track:** **Applied**
 - **Priority:** Tier 1
 - **Status:** drafted, not sent

@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor (since Dec 2012)
 - **Affiliation:** School of Computer and Mathematical Sciences, University of Nottingham Malaysia Campus
-- **Email:** iman.liao@nottingham.edu.my *(verify before sending)*
+- **Email:** Iman.Liao@nottingham.edu.my
 - **Profile URL:** https://www.nottingham.edu.my/Science/People/iman.liao
 - **Pitch track:** **Research**
 - **Priority:** Tier 1

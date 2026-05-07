@@ -5,7 +5,7 @@
 - **Title:** Professor
 - **Affiliation:** School of Engineering, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-engineering/staff-profiles/professor-m-hannan
-- **Email:** TODO — copy from faculty page (masked as `@email`); also reachable via Scopus / Google Scholar profiles
+- **Email:** hannan@sunway.edu.my
 - **Scopus:** https://www.scopus.com/authid/detail.uri?authorId=7103014445
 - **Google Scholar:** https://scholar.google.com/citations?user=J75uNbIAAAAJ
 - **Pitch track:** **Applied**

@@ -4,7 +4,7 @@
 
 - **Title:** Senior Lecturer (PhD candidate in Machine Learning / Text Analytics)
 - **Affiliation:** School of Computing, Asia Pacific University (APU)
-- **Email:** mafas.raheem@apu.edu.my *(verify; APU pattern is firstname.lastname@apu.edu.my)*
+- **Email:** raheem@staffemail.apu.edu.my
 - **Google Scholar:** https://scholar.google.com/citations?user=fTFXZP8AAAAJ
 - **Pitch track:** **Applied**
 - **Priority:** Tier 2

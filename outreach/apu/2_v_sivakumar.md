@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor
 - **Affiliation:** School of Computing, Faculty of Computing and Engineering Technology, Asia Pacific University (APU)
-- **Email:** sivakumar.vengusamy@apu.edu.my *(verify; APU pattern is firstname.lastname@apu.edu.my)*
+- **Email:** dr.sivakumar@staffemail.apu.edu.my
 - **Google Scholar:** https://scholar.google.com/citations?user=-LHP3sQAAAAJ — **1,697 citations**
 - **Also known as:** S. Vengusamy
 - **Pitch track:** **Applied**

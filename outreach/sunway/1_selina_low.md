@@ -5,7 +5,7 @@
 - **Title:** Associate Professor (Deputy Dean)
 - **Affiliation:** School of Computing and Artificial Intelligence, Faculty of Engineering and Technology
 - **Profile URL:** https://sunwayuniversity.edu.my/school-of-computing-and-artificial-intelligence/staff-profiles/associate-professor-dr-selina-low
-- **Email:** TODO — copy from faculty page (the public profile masks it as `@email`); fallback to Sunway directory or LinkedIn DM
+- **Email:** yehchingl@sunway.edu.my
 - **Pitch track:** **Applied**
 - **Priority:** Tier 1 (highest)
 - **Status:** drafted, not sent

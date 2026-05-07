@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor · **Director, Medical AI Research Hub**
 - **Affiliation:** School of Information Technology, Monash University Malaysia
-- **Email:** Ting.CheeMing@monash.edu *(verify on his Monash profile page before sending)*
+- **Email:** ting.cheeming@monash.edu
 - **Profile URL:** https://research.monash.edu/en/persons/chee-ming-ting/
 - **ORCID:** 0000-0002-6037-3728
 - **Pitch track:** **Research**

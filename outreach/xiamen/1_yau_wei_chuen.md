@@ -4,7 +4,7 @@
 
 - **Title:** Associate Professor · **Leader, Cyber Security Research Group**
 - **Affiliation:** School of Computing and Data Science, Xiamen University Malaysia
-- **Email:** weichuen.yau@xmu.edu.my *(verify; XMU pattern is firstname.lastname@xmu.edu.my, e.g. Teo Bee Guan = beeguan.teo@xmu.edu.my)*
+- **Email:** wcyau@xmu.edu.my
 - **Profile URL:** https://www.xmu.edu.my/staff/assoc-prof-ts-dr-yau-wei-chuen
 - **Google Scholar:** ~1,837 citations
 - **Pioneering staff:** at SCDS XMUM since establishment in 2016
