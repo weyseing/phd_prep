@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PhD Research Proposal — Heng Wey Seing (Jeremy)</title>
+<style>
+  @page { size: A4; margin: 20mm 20mm; }
+  html, body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #111;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 16pt;
+    margin: 0 0 4px 0;
+    font-weight: 700;
+  }
+  .subtitle {
+    font-size: 11pt;
+    color: #444;
+    margin: 0 0 14px 0;
+    font-style: italic;
+  }
+  h2 {
+    font-size: 12.5pt;
+    margin: 18px 0 6px 0;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 1px solid #999;
+    padding-bottom: 2px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11pt;
+    margin: 12px 0 4px 0;
+    font-weight: 700;
+    color: #222;
+  }
+  p { margin: 0 0 6px 0; }
+  ul, ol { margin: 4px 0 8px 0; padding-left: 22px; }
+  li { margin-bottom: 3px; }
+  table {
+    border-collapse: collapse;
+    margin: 6px 0 10px 0;
+    font-size: 10pt;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #888;
+    padding: 4px 7px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th { background: #f0f0f0; }
+  em { color: #333; }
+  strong { color: #000; }
+  code {
+    font-family: "Menlo", "Monaco", monospace;
+    font-size: 9.5pt;
+    background: #f4f4f4;
+    padding: 1px 4px;
+    border-radius: 2px;
+  }
+  .draft-banner {
+    background: #fff4d6;
+    border: 1px solid #d4a017;
+    padding: 6px 10px;
+    margin: 0 0 14px 0;
+    font-size: 9.5pt;
+    color: #5b4200;
+  }
+  .todo {
+    background: #fff0f0;
+    color: #b00020;
+    font-style: italic;
+    border-left: 3px solid #b00020;
+    padding: 4px 8px;
+    margin: 4px 0;
+    font-size: 10pt;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 8px 0;
+  }
+  ol.refs {
+    padding-left: 26px;
+    margin: 4px 0;
+  }
+  ol.refs li {
+    margin-bottom: 5px;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<h1>PhD Research Proposal</h1>
+<p class="subtitle">Heng Wey Seing (Jeremy) &nbsp;·&nbsp; PhD by Research, Sunway University</p>
+
+
+<h2>1. Title</h2>
+<p><strong>Counterfactual Reasoning over Foundation-Model Time-Series — A Methodological Framework with Malaysian Public-Health and Infrastructure Case Studies</strong></p>
+<p><em>(Working title. Final title to be agreed with main supervisor.)</em></p>
+
+<h2>2. Abstract</h2>
+<p>Foundation-model time-series forecasters such as Chronos [3], Lag-Llama [4] and Moirai [5] now deliver strong zero-shot predictive performance on diverse time series, but they offer no principled mechanism for <strong>intervention reasoning</strong> — they cannot answer the <em>"what if?"</em> questions that matter to public-sector decision-makers. Conversely, counterfactual time-series methods such as CRN [1] and Causal Transformer [2] do reason about interventions, but they have only been validated on small recurrent architectures and synthetic medical simulators. <strong>No method bridges the two paradigms.</strong></p>
+<p>This thesis proposes to close that gap. The methodological contribution is to adapt adversarial latent-balancing counterfactual methods to operate over <strong>pretrained foundation-model latents</strong>, preserving treatment-invariance across tokenized representations and extending the encoder to accept multivariate exogenous covariates (weather, holidays, policy events). The empirical contribution is the <strong>first publicly documented Malaysian benchmark</strong> for counterfactual time-series forecasting, built on MOH iDengue (spraying interventions), Energy Commission consumption data (festival/holiday natural experiments), and at least one auxiliary domain (palm-oil yield via MPOB). A layered evaluation methodology — synthetic simulators with known ground truth, natural-experiment hold-outs, and Manski-style sensitivity bounds [6] for unobserved confounders — addresses the longstanding problem of validating counterfactual claims on real-world data where ground truth is unavailable. The applied contribution is a Year-4 decision-support prototype, co-designed with one Malaysian agency (target: MOH for dengue control, or TNB / Energy Commission for grid demand).</p>
+<p>The proposal is calibrated to a <strong>4-year Malaysian PhD compute budget</strong> (laptop + Colab + ~RM 2,000–6,000/year cloud GPU; no supercomputer required). Deliverables are sequenced so that Years 1–3 yield a defendable thesis on methods alone if the Year-4 case study slips. The work builds directly on the candidate's MSc dissertation in time-series forecasting at Sunway University.</p>
+
+<h2>3. Methodology</h2>
+
+<h3>3.1 Research questions</h3>
+<ul>
+  <li><strong>RQ1.</strong> Can foundation-model TS encoders' latent representations be conditioned on treatment variables without losing zero-shot forecasting performance?</li>
+  <li><strong>RQ2.</strong> Does adversarial latent balancing (à la Bica et al. 2020) transfer from RNN-based architectures to pretrained foundation-model latents while preserving treatment-invariance?</li>
+  <li><strong>RQ3.</strong> What evaluation methodology is appropriate for counterfactual claims on real-world Malaysian datasets where ground truth is unavailable (synthetic simulators + natural experiments + sensitivity bounds)?</li>
+</ul>
+
+<h3>3.2 Phases</h3>
+<ol>
+  <li><strong>Foundation-model covariate extension.</strong> Extend a pretrained TS foundation model (Chronos / Lag-Llama / Moirai class) to accept multivariate exogenous covariates (weather, holidays, policy events). Benchmark vs. native multivariate baselines.</li>
+  <li><strong>Counterfactual head adaptation.</strong> Port adversarial-balancing counterfactual methods (CRN, Causal Transformer) to operate on the foundation-model latent. Define treatment-invariance loss + balancing constraint at the latent level.</li>
+  <li><strong>Benchmark construction.</strong> Build the first publicly documented Malaysian counterfactual-TS benchmark using MOH iDengue (spraying interventions), Energy Commission consumption (holiday/festival natural experiments), and at least one auxiliary dataset (palm-oil yield via MPOB or similar).</li>
+  <li><strong>Evaluation methodology.</strong> Develop a layered evaluation: (a) synthetic simulators with known ground truth, (b) natural experiments with held-out post-intervention windows, (c) sensitivity bounds (Manski-style) for unobserved confounders.</li>
+  <li><strong>Decision-support prototype.</strong> Year-4 case study with one Malaysian agency (target: MOH for dengue or TNB / Energy Commission for grid demand). Working prototype + user-study evaluation with domain stakeholders.</li>
+</ol>
+
+<h3>3.3 Stack &amp; compute</h3>
+<ul>
+  <li><strong>Software:</strong> Python, PyTorch, HuggingFace Transformers, statsmodels, EconML / DoWhy for causal baselines.</li>
+  <li><strong>Compute:</strong> laptop + Google Colab Pro + ~RM 2,000–6,000/year cloud GPU (well within Malaysian PhD budget; no supercomputer required).</li>
+  <li><strong>Data:</strong> publicly available (MOH iDengue, Met Malaysia, MPOB, Energy Commission). Granular intervention data via supervisor-mediated agency partnership where needed.</li>
+</ul>
+
+<h3>3.4 Why this is feasible in 4 years</h3>
+<ul>
+  <li>Each phase is a self-contained deliverable; thesis is defendable on Years 1–3 work alone if the Year-4 agency case study slips.</li>
+  <li>Builds directly on MSc dissertation (forecasting, calendar covariates, walk-forward CV — see <em>Forecasting Mental Health Sentiment Surges</em>) — no time lost on a cold-start literature ramp.</li>
+  <li>No video / robotics / large-scale-RL compute requirements.</li>
+</ul>
+
+<h2>4. Timelines</h2>
+
+<table>
+  <thead>
+    <tr><th>Year</th><th>Phase</th><th>Deliverable</th><th>Target venue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Literature + Phase 1 (covariate extension)</td><td>Reproduce CRN baselines on foundation-model TS; submit Paper 1 (covariate-extended foundation-model TS)</td><td>Regional / applied venue (e.g. ML4H workshop, IEEE BigData)</td></tr>
+    <tr><td>2</td><td>Phase 2 — counterfactual head</td><td>Paper 2: adversarial latent balancing for foundation-model TS</td><td>Top-tier methods venue (NeurIPS / ICLR / ICML)</td></tr>
+    <tr><td>3</td><td>Phase 3 — Malaysian benchmark + Phase 4 — evaluation methodology</td><td>Paper 3: benchmark + evaluation methodology; thesis chapter draft</td><td>Causal-ML or benchmark venue (CLeaR, NeurIPS Datasets)</td></tr>
+    <tr><td>4</td><td>Phase 5 — decision-support prototype + thesis write-up + viva</td><td>Paper 4: Malaysian agency case study; thesis defence</td><td>Applied venue + thesis defence</td></tr>
+  </tbody>
+</table>
+<p><strong>Mode:</strong> 4-year target (within the 3–6 year range typical for Sunway PhD by Research). <strong>Resilience:</strong> each phase is a self-contained deliverable; thesis is defendable on Years 1–3 work alone if the Year-4 agency case study slips. <strong>Currency control:</strong> annual literature refresh, with a heavier review in Year 3, absorbs drift in foundation-model architectures (Chronos / Lag-Llama / Moirai class are committed to as a <em>paradigm</em>; specific 2026 architectures are swappable encoders in the pipeline).</p>
+
+<h2>5. References</h2>
+<ol class="refs">
+  <li>Bica, I., Alaa, A. M., Jordon, J., &amp; van der Schaar, M. (2020). Estimating counterfactual treatment outcomes over time through adversarially balanced representations. <em>International Conference on Learning Representations (ICLR).</em></li>
+  <li>Melnychuk, V., Frauen, D., &amp; Feuerriegel, S. (2022). Causal Transformer for estimating counterfactual outcomes. <em>International Conference on Machine Learning (ICML).</em></li>
+  <li>Ansari, A. F., Stella, L., Turkmen, C., Zhang, X., Mercado, P., Shen, H., Shchur, O., Rangapuram, S. S., Pineda Arango, S., Kapoor, S., et al. (2024). Chronos: Learning the language of time series. <em>arXiv:2403.07815.</em></li>
+  <li>Rasul, K., Ashok, A., Williams, A. R., Khorasani, A., Adamopoulos, G., Bhagwatkar, R., Biloš, M., Ghonia, H., Hassen, N. V., Schneider, A., Garg, S., et al. (2024). Lag-Llama: Towards foundation models for probabilistic time series forecasting. <em>arXiv:2310.08278.</em></li>
+  <li>Woo, G., Liu, C., Kumar, A., Xiong, C., Savarese, S., &amp; Sahoo, D. (2024). Unified training of universal time series forecasting transformers (Moirai). <em>International Conference on Machine Learning (ICML).</em></li>
+  <li>Manski, C. F. (1990). Nonparametric bounds on treatment effects. <em>American Economic Review</em>, 80(2), 319–323.</li>
+  <li>Lim, B., Arık, S. Ö., Loeff, N., &amp; Pfister, T. (2021). Temporal Fusion Transformers for interpretable multi-horizon time series forecasting. <em>International Journal of Forecasting</em>, 37(4), 1748–1764.</li>
+  <li>Lim, B., Alaa, A., &amp; van der Schaar, M. (2018). Forecasting treatment responses over time using recurrent marginal structural networks. <em>Advances in Neural Information Processing Systems (NeurIPS).</em></li>
+  <li>Hernán, M. A., &amp; Robins, J. M. (2020). <em>Causal Inference: What If.</em> Boca Raton: Chapman &amp; Hall / CRC.</li>
+  <li>Pearl, J. (2009). <em>Causality: Models, Reasoning, and Inference</em> (2nd ed.). Cambridge University Press.</li>
+  <li>Das, A., Kong, W., Sen, R., &amp; Zhou, Y. (2024). A decoder-only foundation model for time-series forecasting (TimesFM). <em>International Conference on Machine Learning (ICML).</em> arXiv:2310.10688.</li>
+  <li>Salinas, D., Flunkert, V., Gasthaus, J., &amp; Januschowski, T. (2020). DeepAR: Probabilistic forecasting with autoregressive recurrent networks. <em>International Journal of Forecasting</em>, 36(3), 1181–1191.</li>
+  <li>Ministry of Health Malaysia. <em>iDengue Geo-Portal — National Dengue Surveillance Data.</em> <a href="https://idengue.mysa.gov.my">https://idengue.mysa.gov.my</a> (accessed May 2026).</li>
+  <li>Energy Commission of Malaysia (Suruhanjaya Tenaga). <em>Energy data and publications.</em> <a href="https://www.st.gov.my">https://www.st.gov.my</a> (accessed May 2026).</li>
+</ol>
+<p style="font-size:9.5pt;color:#444;font-style:italic;">Annual literature refresh planned in Year 3 to capture post-2026 advances in foundation-model time-series and counterfactual ML.</p>
+
+</body>
+</html>
