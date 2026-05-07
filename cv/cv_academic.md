@@ -53,7 +53,7 @@ Lead the AI engineering function for one of Malaysia's largest payment infrastru
 - Designed agentic-AI frameworks combining LLM-driven reasoning with rule-based logic for autonomous diagnosis, predictive monitoring, and intelligent automation.
 - Built knowledge-based AI platforms unifying enterprise data — relevant precedent for the data-integration work that any Malaysian public-sector decision-support prototype will require.
 
-**Robotics Process Automation (RPA) Engineer** — *Dell Technologies, Kuala Lumpur* &nbsp;&nbsp; *(Jan 2018 – Aug 2022)*
+**Robotics (RPA) Engineer** — *Dell Technologies, Kuala Lumpur* &nbsp;&nbsp; *(Jan 2018 – Aug 2022)*
 - Engineered enterprise-grade RPA solutions on UiPath, Blue Prism, and Automation Anywhere.
 - Developed cognitive-automation bots integrating **OCR and NLP** for unstructured-data handling — early hands-on exposure to the same NLP techniques later applied in the MSc dissertation.
 - Designed scalable robotic frameworks integrating APIs, databases, and legacy systems.
@@ -63,7 +63,7 @@ Lead the AI engineering function for one of Malaysia's largest payment infrastru
 
 ## Technical skills
 
-- **Languages and runtime:** Python (primary), SQL, JavaScript/TypeScript, Bash.
+- **Languages and runtime:** Python (primary), SQL, JavaScript/TypeScript, Node.js, Bash.
 - **Machine learning / deep learning:** PyTorch, scikit-learn, HuggingFace Transformers (RoBERTa), statsmodels (Poisson / Negative Binomial GLMs), Prophet, SARIMA / SARIMAX.
 - **NLP and text mining:** HuggingFace pipelines, RoBERTa-based sentiment classification, VADER, lexicon + transformer hybrid scoring, topic modelling.
 - **Big data and streaming:** Apache Kafka, Apache Flink, AWS Redshift, lakehouse and data-warehouse architectures.

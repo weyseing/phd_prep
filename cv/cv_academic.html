@@ -74,6 +74,10 @@
   .education-block p {
     margin: 0 0 1px 0;
   }
+  .references-block {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
   .references-block p {
     margin: 0;
   }
@@ -86,6 +90,14 @@
     font-size: 9pt;
     color: #555;
     font-style: italic;
+  }
+  h2 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  h2.page-break {
+    page-break-before: always;
+    break-before: page;
   }
 </style>
 </head>
@@ -135,7 +147,7 @@
 <h2>Publications and preprints</h2>
 <p><em>None to date.</em> (PhD proposal targets first publications in time-series forecasting and applied counterfactual ML venues.)</p>
 
-<h2>Professional experience</h2>
+<h2 class="page-break">Professional experience</h2>
 
 <p class="role-line"><strong>Manager, AI Engineering</strong> — <em>Fiuu (formerly Razer Merchant Services / MOLPay), Kuala Lumpur</em> &nbsp;&nbsp; <span class="role-meta">(Aug 2022 – Present)</span></p>
 <p>Lead the AI engineering function for one of Malaysia's largest payment infrastructure providers. Responsibilities relevant to research training:</p>
@@ -145,7 +157,7 @@
   <li>Built knowledge-based AI platforms unifying enterprise data — relevant precedent for the data-integration work that any Malaysian public-sector decision-support prototype will require.</li>
 </ul>
 
-<p class="role-line"><strong>Robotics Process Automation (RPA) Engineer</strong> — <em>Dell Technologies, Kuala Lumpur</em> &nbsp;&nbsp; <span class="role-meta">(Jan 2018 – Aug 2022)</span></p>
+<p class="role-line"><strong>Robotics (RPA) Engineer</strong> — <em>Dell Technologies, Kuala Lumpur</em> &nbsp;&nbsp; <span class="role-meta">(Jan 2018 – Aug 2022)</span></p>
 <ul>
   <li>Engineered enterprise-grade RPA solutions on UiPath, Blue Prism, and Automation Anywhere.</li>
   <li>Developed cognitive-automation bots integrating <strong>OCR and NLP</strong> for unstructured-data handling — early hands-on exposure to the same NLP techniques later applied in the MSc dissertation.</li>
@@ -155,7 +167,7 @@
 
 <h2>Technical skills</h2>
 <ul>
-  <li><strong>Languages and runtime:</strong> Python (primary), SQL, JavaScript/TypeScript, Bash.</li>
+  <li><strong>Languages and runtime:</strong> Python (primary), SQL, JavaScript/TypeScript, Node.js, Bash.</li>
   <li><strong>Machine learning / deep learning:</strong> PyTorch, scikit-learn, HuggingFace Transformers (RoBERTa), statsmodels (Poisson / Negative Binomial GLMs), Prophet, SARIMA / SARIMAX.</li>
   <li><strong>NLP and text mining:</strong> HuggingFace pipelines, RoBERTa-based sentiment classification, VADER, lexicon + transformer hybrid scoring, topic modelling.</li>
   <li><strong>Big data and streaming:</strong> Apache Kafka, Apache Flink, AWS Redshift, lakehouse and data-warehouse architectures.</li>
@@ -185,8 +197,8 @@
   <p>Associate Professor (Deputy Dean), School of Computing and Artificial Intelligence</p>
   <p>Sunway University, Malaysia</p>
   <p>Email: yehchingl@sunway.edu.my</p>
+  <p class="small-note">Additional references available on request.</p>
 </div>
-<p class="small-note" style="margin-top:6px;">Additional references available on request.</p>
 
 </body>
 </html>
